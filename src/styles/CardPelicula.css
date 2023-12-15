@@ -1,0 +1,59 @@
+.contenedor-pelicula h2{
+    width:  250px;
+    height: 54px;
+    text-align: center;
+}
+
+.card-pelicula {
+  width: 250px;
+  height: 375px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid #fff;
+  position: relative;
+}
+
+.card-pelicula img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  color: #fff;
+  position: absolute;
+  background: #1f3d4738;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.card-pelicula:hover .card-body {
+  right: 0;
+}
+
+.card-info-pelicula {
+  text-transform: capitalize;
+  padding: 3px 14px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 15;
+  -webkit-box-orient: vertical;
+}
+
+.card-info-extra {
+  text-transform: capitalize;
+  padding: 0 14px;
+  font-size: 20px;
+}
